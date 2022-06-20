@@ -44,7 +44,7 @@ class AutoService{
   update(id, auto) {
     const posicion = this.auto.findIndex(item => item.id == id);
     if (posicion === -1) {
-      throw new Error("auto no encontrado");
+      throw new Error("Auto no encontrado");
     }
     this.auto[posicion] = auto;
     return this.auto[posicion];
@@ -53,11 +53,11 @@ class AutoService{
   delete(id) {
     const posicion = this.auto.findIndex(item => item.id == id);
     if (posicion === -1) {
-      throw new Error("Producto no encontrado");
+      throw new Error("Auto no encontrado");
     }
     this.auto.splice(posicion, 1);
     return {
-      mensaje: "operacion realizada",
+      mensaje: "Auto eliminado",
       id
     };
   }

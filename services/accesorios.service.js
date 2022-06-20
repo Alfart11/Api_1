@@ -44,7 +44,7 @@ class AccesorioService{
   update(id, accesorio) {
     const posicion = this.accesorios.findIndex(item => item.id == id);
     if (posicion === -1) {
-      throw new Error("accesorio no encontrado");
+      throw new Error("Accesorio no encontrado");
     }
     this.accesorios[posicion] = accesorio;
     return this.accesorios[posicion];
@@ -53,11 +53,11 @@ class AccesorioService{
   delete(id) {
     const posicion = this.accesorios.findIndex(item => item.id == id);
     if (posicion === -1) {
-      throw new Error("Producto no encontrado");
+      throw new Error("Accesorio no encontrado");
     }
     this.accesorios.splice(posicion, 1);
     return {
-      mensaje: "operacion realizada",
+      mensaje: "Accesorio eliminado",
       id
     };
   }
