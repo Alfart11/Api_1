@@ -66,8 +66,8 @@ class AutoService{
     return this.auto;
   }
 
-  findBy() {
-    return this.auto.find(item => item.id === id);
+  findBy(id) {
+    return this.auto.find(item => item.id == id);
   }
 }
 

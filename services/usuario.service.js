@@ -41,7 +41,7 @@ class usuarioService{
     return this.usuario
   }
   findBy(id){
-    return this.usuario.find(item => item.codE === id)
+    return this.usuario.find(item => item.id === id)
   }
 }
 

@@ -41,7 +41,7 @@ class administradorService{
     return this.administrador
   }
   findBy(id){
-    return this.administrador.find(item => item.codE === id)
+    return this.administrador.find(item => item.id === id)
   }
 }
 
